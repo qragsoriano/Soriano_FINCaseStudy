@@ -1,0 +1,430 @@
+{
+  "_exclude": [
+    "age",
+    "uptime",
+    "last_change",
+    "cksum",
+    "seq",
+    "dead_timer",
+    "hello_timer",
+    "checksum",
+    "seq_num",
+    "statistics",
+    "lsas",
+    "last_state_change",
+    "bdr_ip_addr",
+    "dr_ip_addr",
+    "state",
+    "bdr_router_id",
+    "dr_router_id",
+    "area_scope_lsa_cksum_sum"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "vrf": {
+      "default": {
+        "address_family": {
+          "ipv4": {
+            "instance": {
+              "10": {
+                "areas": {
+                  "0.0.0.0": {
+                    "area_id": "0.0.0.0",
+                    "area_type": "normal",
+                    "database": {
+                      "lsa_types": {
+                        "1": {
+                          "lsa_type": 1,
+                          "lsas": {
+                            "1.1.1.1 1.1.1.1": {
+                              "adv_router": "1.1.1.1",
+                              "lsa_id": "1.1.1.1",
+                              "ospfv2": {
+                                "body": {
+                                  "router": {
+                                    "links": {
+                                      "10.27.0.0": {
+                                        "link_data": "255.255.255.252",
+                                        "link_id": "10.27.0.0",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "stub network"
+                                      },
+                                      "10.29.0.0": {
+                                        "link_data": "255.255.255.252",
+                                        "link_id": "10.29.0.0",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "stub network"
+                                      },
+                                      "192.168.50.0": {
+                                        "link_data": "255.255.255.0",
+                                        "link_id": "192.168.50.0",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 10,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "stub network"
+                                      },
+                                      "2.2.2.2": {
+                                        "link_data": "10.29.0.2",
+                                        "link_id": "2.2.2.2",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "another router (point-to-point)"
+                                      },
+                                      "3.3.3.3": {
+                                        "link_data": "10.27.0.2",
+                                        "link_id": "3.3.3.3",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "another router (point-to-point)"
+                                      }
+                                    },
+                                    "num_of_links": 5
+                                  }
+                                },
+                                "header": {
+                                  "adv_router": "1.1.1.1",
+                                  "age": 242,
+                                  "checksum": "0x6B2F",
+                                  "length": 84,
+                                  "lsa_id": "1.1.1.1",
+                                  "option": "None",
+                                  "seq_num": "80000004",
+                                  "type": 1
+                                }
+                              }
+                            },
+                            "2.2.2.2 2.2.2.2": {
+                              "adv_router": "2.2.2.2",
+                              "lsa_id": "2.2.2.2",
+                              "ospfv2": {
+                                "body": {
+                                  "router": {
+                                    "links": {
+                                      "1.1.1.1": {
+                                        "link_data": "10.29.0.1",
+                                        "link_id": "1.1.1.1",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "another router (point-to-point)"
+                                      },
+                                      "10.29.0.0": {
+                                        "link_data": "255.255.255.252",
+                                        "link_id": "10.29.0.0",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "stub network"
+                                      },
+                                      "10.30.0.0": {
+                                        "link_data": "255.255.255.252",
+                                        "link_id": "10.30.0.0",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "stub network"
+                                      },
+                                      "172.16.1.0": {
+                                        "link_data": "255.255.255.252",
+                                        "link_id": "172.16.1.0",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 10,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "stub network"
+                                      },
+                                      "3.3.3.3": {
+                                        "link_data": "10.30.0.2",
+                                        "link_id": "3.3.3.3",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "another router (point-to-point)"
+                                      }
+                                    },
+                                    "num_of_links": 5
+                                  }
+                                },
+                                "header": {
+                                  "adv_router": "2.2.2.2",
+                                  "age": 239,
+                                  "checksum": "0xAEC4",
+                                  "length": 84,
+                                  "lsa_id": "2.2.2.2",
+                                  "option": "None",
+                                  "seq_num": "80000003",
+                                  "type": 1
+                                }
+                              }
+                            },
+                            "3.3.3.3 3.3.3.3": {
+                              "adv_router": "3.3.3.3",
+                              "lsa_id": "3.3.3.3",
+                              "ospfv2": {
+                                "body": {
+                                  "router": {
+                                    "links": {
+                                      "1.1.1.1": {
+                                        "link_data": "10.27.0.1",
+                                        "link_id": "1.1.1.1",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "another router (point-to-point)"
+                                      },
+                                      "10.27.0.0": {
+                                        "link_data": "255.255.255.252",
+                                        "link_id": "10.27.0.0",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "stub network"
+                                      },
+                                      "10.30.0.0": {
+                                        "link_data": "255.255.255.252",
+                                        "link_id": "10.30.0.0",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "stub network"
+                                      },
+                                      "152.16.1.0": {
+                                        "link_data": "255.255.255.252",
+                                        "link_id": "152.16.1.0",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 10,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "stub network"
+                                      },
+                                      "2.2.2.2": {
+                                        "link_data": "10.30.0.1",
+                                        "link_id": "2.2.2.2",
+                                        "topologies": {
+                                          "0": {
+                                            "metric": 64,
+                                            "mt_id": 0
+                                          }
+                                        },
+                                        "type": "another router (point-to-point)"
+                                      }
+                                    },
+                                    "num_of_links": 5
+                                  }
+                                },
+                                "header": {
+                                  "adv_router": "3.3.3.3",
+                                  "age": 237,
+                                  "checksum": "0x8BFD",
+                                  "length": 84,
+                                  "lsa_id": "3.3.3.3",
+                                  "option": "None",
+                                  "seq_num": "80000002",
+                                  "type": 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "interfaces": {
+                      "FastEthernet0/1": {
+                        "bfd": {
+                          "enable": false
+                        },
+                        "cost": 10,
+                        "dead_interval": 40,
+                        "demand_circuit": false,
+                        "dr_ip_addr": "172.16.1.1",
+                        "dr_router_id": "2.2.2.2",
+                        "enable": true,
+                        "hello_interval": 10,
+                        "interface_type": "broadcast",
+                        "lls": true,
+                        "name": "FastEthernet0/1",
+                        "priority": 1,
+                        "retransmit_interval": 5,
+                        "state": "dr",
+                        "transmit_delay": 1
+                      },
+                      "Serial0/1": {
+                        "bfd": {
+                          "enable": false
+                        },
+                        "cost": 64,
+                        "dead_interval": 40,
+                        "demand_circuit": false,
+                        "enable": true,
+                        "hello_interval": 10,
+                        "hello_timer": "00:00:01",
+                        "interface_type": "point-to-point",
+                        "lls": true,
+                        "name": "Serial0/1",
+                        "neighbors": {
+                          "1.1.1.1": {
+                            "address": "10.29.0.2",
+                            "bdr_ip_addr": "0.0.0.0",
+                            "dead_timer": "00:00:37",
+                            "dr_ip_addr": "0.0.0.0",
+                            "neighbor_router_id": "1.1.1.1",
+                            "state": "full",
+                            "statistics": {
+                              "nbr_event_count": 6,
+                              "nbr_retrans_qlen": 0
+                            }
+                          }
+                        },
+                        "passive": false,
+                        "retransmit_interval": 5,
+                        "state": "point-to-point",
+                        "transmit_delay": 1
+                      },
+                      "Serial0/2": {
+                        "bfd": {
+                          "enable": false
+                        },
+                        "cost": 64,
+                        "dead_interval": 40,
+                        "demand_circuit": false,
+                        "enable": true,
+                        "hello_interval": 10,
+                        "hello_timer": "00:00:01",
+                        "interface_type": "point-to-point",
+                        "lls": true,
+                        "name": "Serial0/2",
+                        "neighbors": {
+                          "3.3.3.3": {
+                            "address": "10.30.0.1",
+                            "bdr_ip_addr": "0.0.0.0",
+                            "dead_timer": "00:00:33",
+                            "dr_ip_addr": "0.0.0.0",
+                            "neighbor_router_id": "3.3.3.3",
+                            "state": "full",
+                            "statistics": {
+                              "nbr_event_count": 6,
+                              "nbr_retrans_qlen": 0
+                            }
+                          }
+                        },
+                        "passive": false,
+                        "retransmit_interval": 5,
+                        "state": "point-to-point",
+                        "transmit_delay": 1
+                      }
+                    },
+                    "mpls": {
+                      "te": {
+                        "enable": false
+                      }
+                    },
+                    "statistics": {
+                      "area_scope_lsa_cksum_sum": "0x01A5F0",
+                      "area_scope_lsa_count": 3,
+                      "spf_runs_count": 2
+                    }
+                  }
+                },
+                "bfd": {
+                  "enable": false
+                },
+                "graceful_restart": {
+                  "cisco": {
+                    "enable": false,
+                    "type": "cisco"
+                  },
+                  "ietf": {
+                    "enable": false,
+                    "type": "ietf"
+                  }
+                },
+                "mpls": {
+                  "ldp": {
+                    "autoconfig": false,
+                    "autoconfig_area_id": "0.0.0.0"
+                  }
+                },
+                "nsr": {
+                  "enable": false
+                },
+                "preference": {
+                  "single_value": {
+                    "all": 110
+                  }
+                },
+                "router_id": "2.2.2.2",
+                "spf_control": {
+                  "paths": 4,
+                  "throttle": {
+                    "spf": {
+                      "hold": 10000,
+                      "maximum": 10000,
+                      "start": 5000
+                    }
+                  }
+                },
+                "stub_router": {
+                  "always": {
+                    "always": false,
+                    "external_lsa": false,
+                    "include_stub": false,
+                    "summary_lsa": false
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

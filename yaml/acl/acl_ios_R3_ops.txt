@@ -1,0 +1,53 @@
+{
+  "_exclude": [],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "acls": {
+      "DENY_STUDENT_TO_ITSOVOLUNTEER": {
+        "aces": {
+          "10": {
+            "actions": {
+              "forwarding": "deny"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "172.16.1.0 0.0.0.255": {
+                      "source_ipv4_network": "172.16.1.0 0.0.0.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "10"
+          },
+          "20": {
+            "actions": {
+              "forwarding": "permit"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "20"
+          }
+        },
+        "name": "DENY_STUDENT_TO_ITSOVOLUNTEER",
+        "type": "ipv4-acl-type"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+---
+-  hosts: routers
+   gather_facts: no
+   connection: network_cli
+   become_method: enable
+   
+   tasks:
+     - name: Authentication, Authorization, Accounting
+       ios_config:
+         commands:
+           - aaa new-model
+           - aaa authentication login default local
+
+     - name: Line console for Authentication
+       ios_config:
+         commands:
+           - login authentication default
+         parents: line console 0
+
+     - name: Authentication SSH configuration
+       ios_config:
+         commands:
+           - aaa authentication login SSH-LOGIN local
+
+     - name: Vty lines for authentication
+       ios_config:
+         commands:
+           - login authentication SSH-LOGIN
+         parents: line vty 0 4

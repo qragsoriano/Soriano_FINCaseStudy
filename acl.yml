@@ -1,0 +1,22 @@
+---
+-  hosts: routers
+   gather_facts: false
+   connection: network_cli
+   become_method: enable
+   
+   tasks:
+     - name: ACL R1
+       when: ansible_host == "10.29.0.2"
+       ios_config:
+         parents: ip access-list standard DENY_STUDENT_TO_ITSO
+         lines:
+           - deny 172.16.1.0 0.0.0.255
+           - permit any
+
+     - name: ACL R3
+       when: ansible_host == "10.30.0.1"
+       ios_config:
+         parents: ip access-list standard DENY_STUDENT_TO_ITSOVOLUNTEER
+         lines:
+           - deny 172.16.1.0 0.0.0.255
+           - permit any
